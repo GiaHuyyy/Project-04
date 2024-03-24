@@ -98,6 +98,14 @@ button {
     line-height: 1.88;
 }
 
+/* Giới hạn số dòng là 2, vượt quá hiện ... */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--cline-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /* Header */
 .header {
     padding: 26px 0;
@@ -689,6 +697,7 @@ button {
 
 .service__cta {
     min-width: 214px;
+    font-size: 1.6rem;
     color: var(--primary-color);
     border-color: currentColor;
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
@@ -802,6 +811,7 @@ button {
 .staff__cta {
     margin-top: 48px;
     min-width: 193px;
+    font-size: 1.6rem;
     color: var(--primary-color);
     border-color: currentColor;
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
@@ -935,6 +945,7 @@ button {
     --height: 44px;
     margin-top: 22px;
     width: 100%;
+    font-size: 1.6rem;
     color: var(--primary-color);
     border-color: rgba(255, 91, 46, 0.6);
     background: transparent;
@@ -1098,4 +1109,94 @@ button {
 .review__dot--active {
     width: 28px;
     background: var(--primary-color);
+}
+
+/* Blog */
+.blog {
+    padding: 78px 0;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    width: 350px;
+    margin-right: 73px;
+}
+
+.blog__desc {
+    margin-top: 0;
+}
+
+.blog__cta {
+    min-width: 182px;
+    margin-top: 24px;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    border-color: rgba(255, 91, 46, 0.6);
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    margin-top: 54px;
+}
+
+.blog-item__img-wrap {
+    position: relative;
+    padding: 24px 0 0 36px;
+    border-radius: 24px;
+}
+
+.blog-item:nth-child(1) .blog-item__img-wrap {
+    background: #90ccff;
+}
+
+.blog-item:nth-child(2) .blog-item__img-wrap {
+    background: #ff997e;
+}
+
+.blog-item:nth-child(3) .blog-item__img-wrap {
+    background: #5bd6e2;
+}
+
+.blog-item__time {
+    position: relative;
+    color: #fff;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.21;
+    z-index: 1;
+}
+
+.blog-item__img {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+    height: 296px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.blog-item__info {
+    padding: 28px 16px 0 0;
+}
+
+.blog-item__title {
+    color: #000958;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.54;
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1.71;
 }
