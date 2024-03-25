@@ -1200,3 +1200,133 @@ button {
     font-size: 1.4rem;
     line-height: 1.71;
 }
+
+/* Footer */
+.footer {
+    margin-top: 53px;
+    background: linear-gradient(to right, #fff6ed 42.7%, transparent 42.7%);
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__left {
+    width: 42.7%;
+    padding: 114px 0 148px;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0 68px;
+    width: 268px;
+    height: 46px;
+    background: #fff;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+}
+
+.subscribe-form__input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 22px;
+    border-radius: inherit;
+    font-size: 1.4rem;
+    color: #656689;
+}
+
+.subscribe-form__input::placeholder {
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16;
+    opacity: 0.8;
+}
+
+.subscribe-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 2px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--primary-color);
+    outline: none;
+    border: none;
+    margin-right: -1px;
+}
+
+.subscribe-form__submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer__heading {
+    color: #000958;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.11;
+}
+
+.social-list {
+    margin-top: 16px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.social-item:hover {
+    opacity: 0.8;
+}
+
+.footer__right {
+    flex: 1;
+    padding: 52px 0 48px;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 58px 137px;
+    margin-left: 130px;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 2;
+    white-space: nowrap;
+}
+
+.footer__link:hover {
+    opacity: 0.8;
+}
+
+.footer__copy-right {
+    display: inline-block;
+    margin-top: 52px;
+    color: #656689;
+    font-size: 1.2rem;
+    line-height: 1.16;
+    opacity: 0.5;
+}
